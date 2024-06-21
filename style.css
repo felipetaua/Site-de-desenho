@@ -1,0 +1,79 @@
+/* Definindo cores principais */
+:root {
+    --color-background: #FFF3E0; /* Cor de fundo */
+    --color-primary: #FF7043;    /* Cor primária */
+    --color-secondary: #FFAB91;  /* Cor secundária */
+    --color-accent: #FF5722;     /* Cor de destaque */
+    --color-text: #4E342E;       /* Cor do texto */
+}
+
+/* Estilos para o corpo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background); /* Aplicando cor de fundo */
+}
+
+h1 {
+    margin: 20px 0;
+    color: var(--color-text); /* Cor do texto do título */
+    font-size: 2.5rem;        /* Tamanho da fonte do título */
+}
+
+/* Estilos para o toolbar */
+#toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--color-primary); /* Cor de fundo do toolbar */
+    border-radius: 10px;                    /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#toolbar label {
+    margin: 5px 10px;
+    color: var(--color-text); /* Cor do texto das labels */
+    font-weight: bold;        /* Negrito para as labels */
+}
+
+#toolbar input[type="color"],
+#toolbar input[type="range"] {
+    margin: 5px 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para os inputs */
+}
+
+#toolbar button {
+    margin: 5px 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-accent); /* Cor de fundo dos botões */
+    color: white;                          /* Cor do texto dos botões */
+    font-weight: bold;                     /* Texto em negrito */
+    cursor: pointer;                       /* Cursor pointer */
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+#toolbar button:hover {
+    background-color: var(--color-primary); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o canvas */
+#drawing-canvas {
+    border: 2px solid var(--color-text); /* Borda do canvas */
+    border-radius: 10px;                 /* Bordas arredondadas */
+    cursor: crosshair;                   /* Cursor de crosshair */
+    max-width: 100%;
+    height: auto;
+    background-color: white;             /* Cor de fundo do canvas */
+}

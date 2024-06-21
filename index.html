@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Desenho</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <h1>Site de Desenho</h1> <!-- Título da página -->
+    <div id="toolbar">
+        <!-- Ferramentas para o desenho -->
+        <label for="color-picker">Cor:</label>
+        <input type="color" id="color-picker" value="#000000">
+        
+        <label for="brush-size">Tamanho do Pincel:</label>
+        <input type="range" id="brush-size" min="1" max="50" value="5">
+        
+        <!-- Botões de ação -->
+        <button id="clear-button">Limpar</button>
+        <button id="save-button">Salvar</button>
+    </div>
+    <canvas id="drawing-canvas"></canvas> <!-- Área de desenho -->
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>
